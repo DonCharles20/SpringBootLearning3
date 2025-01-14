@@ -1,7 +1,5 @@
 package com.don.springweb.service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,11 +30,12 @@ public class ProductService {
      * 
      * 
      */
-    List<Product> products = new ArrayList<>(Arrays.asList(
+
+    /*List<Product> products = new ArrayList<>(Arrays.asList(
             new Product(101, "Iphone", 50000),
             new Product(102, "cannon Camera", 70000),
             new Product(103, "Shure Mic", 10000)
-    ));
+    ));*/
 
     public List<Product> getProducts() {
         //return products;
@@ -66,7 +65,7 @@ public class ProductService {
      * 
      */
     public Product getProductById(int prodId) {
-        /*
+        /*Steam Api Example use:
         return products.stream().filter(p -> p.getProdId() == prodId)
                 .findFirst().orElse(new Product(404, "Product Not Found", 0));
          */

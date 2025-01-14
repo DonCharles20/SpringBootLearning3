@@ -37,8 +37,7 @@ Lombok is commonly used in Java projects to improve developer productivity and r
 /*what is @AllArgsConstrcutor what does it do and how it works:
  * The @AllArgsConstructor annotation is a Lombok annotation that generates a constructor
  * for a Java class that initializes all fields in the class.
- * By using @AllArgsConstructor, developers can avoid writing boilerplate code for constructors
- * that take multiple arguments, making the codebase more concise and readable.
+ * it creates a constructor that take multiple arguments,
  * The @AllArgsConstructor annotation is often used in conjunction with other Lombok annotations,
  * such as @Data and @NoArgsConstructor, to further reduce the amount of code that needs to be written.
  * For example, instead of writing a constructor that initializes each field in a class,
@@ -64,6 +63,21 @@ Lombok is commonly used in Java projects to improve developer productivity and r
  * 
  * When using a JPA repository, the entity class must be annotated with @Entity to indicate that it is a persistent entity.
  */
+
+/*not using Lombook here but with it
+ * there would be no need to mannualy
+ * create setters and getters 
+ * or create consstrcutors.
+ * you can use these annotationns:
+ * @Data and 
+ * @AllArgsConstructor
+ * 
+ * @NoArgsConstrcutor:
+ * this creates a constocutor with no
+ * arguments
+ * 
+ * 
+ */
 public class Product {
     @Id//this lets the JPA know that this is the primary key
     //what is a Primary Key?
@@ -83,9 +97,7 @@ public class Product {
     private int price;
 
 
-    //Constructor is not needed since I have Lombok @AllArgsConstructor
-    //for the sake of following the tutorial I made it
-    //ran into an error where it needed a defaut constrcutor
+    
     public Product(){
 
     }
@@ -94,8 +106,7 @@ public class Product {
         this.prodName = prodName;
         this.price = price;
     }
-    //Setters and getters are not needed since I have Lombok
-    //for the sake of following the tutorial I made them
+   
     public int getProdId(){
         return prodId;
     }
