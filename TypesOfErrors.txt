@@ -1,0 +1,53 @@
+There are diffrent types of http errors to look out for:
+1. 1xx Informational
+2. 2xx Success
+3. 3xx Redirection
+4. 4xx Client Error
+5. 5xx Server Error
+
+Most common errors are:
+1. 404 Not Found
+    The server can not find the requested resource. 
+    Common causes: a misspelled URL, a broken link, deleted page.
+    
+2. 403 Forbidden
+    The server understands the request, but the refueses to authorize it.
+    commons causes: lack of proper permissions, or blocked access.
+
+3. 500 Internal Server Error
+    The server encountered an unexpected condition that prevented it from fulfilling the request.
+    common causes are: server misconfiguration, database issues, programming errors.
+4. 503 Service Unavailable
+    The server is unable to handle the request due to temporary overloading or maintenance.
+    common causes: server overload, server maintenance, server outages.
+
+5. 504 Gateway Timeout
+    The server did not receive a timely response from an upstream server.
+    Common causes: slow upstream servers or network delays.6. 
+    
+6. 400 Bad Request
+    The server cannot process the request due to a client error(e.g.,malformed syntax).
+    common causes: missing required parameters, invalid input, corrupt cookies.
+
+7. 401 Unauthorized
+    The server refuses to authorize the request because the client lacks proper authentication.
+    common causes: missing or incorrect login credentials, expired session.
+
+8. 501 Not Implemented
+    The server does not support the functionality required to fulfill the request.
+    common causes: unsupported HTTP methods, missing features.
+9. 409 Conflict
+    The server cannot process the request because of a conflict in the request.
+    common causes: concurrent requests, conflicting data.
+10. 429 Too Many Requests
+    The client has sent too many requests in a given amount of time.
+    common causes: rate limiting, server overload.
+
+11. 502 Bad Gateway
+    The server received an invalid response from an upstream server.
+    common causes: issues with a reverse proxy, gateway, or load balancer.
+
+12. 408 Request Timeout
+ The Client took too long to send the request.
+ common causes: slow internet connection, server overload.
+

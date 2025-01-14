@@ -1,0 +1,39 @@
+What is ORM?
+ORM stands for Object-Relational Mapping. It is a programming technique that maps the object to the data stored in the database. 
+It is a way to interact with the database using an object-oriented programming language.
+ORM allows developers to work with objects instead of writing SQL queries to interact with the database.
+It provides a layer of abstraction between the application code and the database, making it easier to work with databases in an object-oriented way.
+ORM frameworks like Hibernate, Entity Framework, and Django ORM are popular examples of ORM tools used in various programming languages.
+
+what is Dbms?
+DBMS stands for Database Management System. It is a software system that allows users to interact with databases.
+DBMS provides an interface to define, create, retrieve, update, and delete data in a database.
+It manages the storage, retrieval, and manipulation of data in a database.
+DBMS provides features like data security, data integrity, concurrency control, and data recovery.
+Popular examples of DBMS include MySQL, Oracle Database, Microsoft SQL Server, and PostgreSQL.
+*When using a Dbms in spring boot it will ask for the database url and Driver*
+*Configure this in the application.properties file.*
+
+What is JPA?
+JPA stands for Java Persistence API. 
+It is a Java specification for managing relational data in Java applications.
+JPA provides a set of interfaces and annotations that allow developers to map Java objects to database tables and perform CRUD operations on them.
+JPA is part of the Java EE (Enterprise Edition) platform and is commonly used with ORM frameworks like Hibernate to simplify database interactions in Java applications.
+JPA supports various features such as entity mapping, relationships between entities, and query language for database operations.
+JPA implementations like Hibernate, EclipseLink, and OpenJPA provide the underlying functionality to work with databases using JPA.
+
+What is Spring Data JPA?
+Spring Data JPA is a part of the Spring Data project that makes it easier to work with JPA in Spring applications.
+It provides a set of abstractions and utilities to simplify the development of data access layers in Spring applications.
+Spring Data JPA reduces the boilerplate code required to interact with the database by providing repository interfaces that define common CRUD operations.
+Developers can create custom repository interfaces that extend these interfaces to define additional query methods specific to their application requirements.
+Spring Data JPA also supports query methods, derived queries, and pagination to make it easier to work with JPA entities in Spring applications.
+
+What is H2 Database?
+H2 Database is an open-source, in-memory, and embedded relational database written in Java.
+It is lightweight, fast, and easy to use, making it a popular choice for testing and development purposes.
+H2 Database can be run in embedded mode within an application or as a standalone server.
+It supports standard SQL syntax and provides features like transactions, indexes, and stored procedures.
+H2 Database can be easily integrated with Java applications using JDBC or JPA, making it a versatile choice for database development in Java applications.
+
+
